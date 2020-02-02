@@ -1,0 +1,13 @@
+//代码生成配置，具体用法参考：http://enilu.gitee.io/alistar/ecosystem/code-generator.html
+{
+  "codeConfig": {
+    "type": "org.evue.alistar.code.CodeConfig",
+    "fields": {
+      "entityModel": "alistar-core",
+      "daoModel": "alistar-core",
+      "serviceModel": "alistar-core",
+      "controllerModel": "alistar-api",
+      "viewModel": "alistar-evue"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+jwt:
+  token:
+    expire:
+      time: 30
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR
+server:
+  port: 8082
+  tomcat:
+    max-threads: 800
+spring:
+  aop:
+    proxy-target-class: true
+  cache:
+    ehcache:
+      config: 'classpath:ehcache.xml'
+  datasource:
+    initialization-mode: embedded
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      validation-query: SELECT 1
+      stat-view-servlet:
+        allow: 127.0.0.1
+        enabled: true
+        login-password: druidpassword
+        login-username: druiduser
+        reset-enable: false
+        url-pattern: /druid/*
+      web-stat-filter:
+        enabled: true
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+        url-pattern: /*
+  devtools:
+    restart:
+      additional-paths: src/main/java
+      enabled: false
+  http:
+    converters:
+      preferred-json-mapper: fastjson
+  jpa:
+    hibernate:
+      use-new-id-generator-mappings: false
+  mail:
+    host: smtp.qq.com
+    password: wnsdfsdfsdfbfbjhc
+    port: 465
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+    protocol: smtp
+    username: enidfdluzt@qq.com
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: dev
