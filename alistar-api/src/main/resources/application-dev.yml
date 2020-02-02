@@ -4,7 +4,7 @@ spring:
     driver-class-name: org.h2.Driver
     password: root
     sql-script-encoding: utf-8
-    url: jdbc:h2:file:./h2/code-generator;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=TRUE
+    url: jdbc:h2:file:./h2/alistardb;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=TRUE
     username: root
   h2:
     console:
